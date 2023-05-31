@@ -29,7 +29,7 @@ move(character).to(100, 250)
 
 document.addEventListener('keydown', function(e){
     if (e.repeat) return;
-                   
+
     if(e.key === 'ArrowLeft'){
         direction = 'west'
     }
@@ -42,6 +42,9 @@ document.addEventListener('keydown', function(e){
     if(e.key === 'ArrowDown'){
         direction = 'south'
     }
+})
+document.addEventListener('keyup', function(e){
+    direction = null
 })
 
 
